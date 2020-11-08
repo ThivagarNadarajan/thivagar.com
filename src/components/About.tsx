@@ -9,6 +9,9 @@ import linkedinFilled from '@iconify/icons-ant-design/linkedin-filled';
 
 //TODO: maybe change viewport to regular
 //TODO: rm <br/> when done
+//TODO: clean up commented code everywhere
+//TODO: add button for email too
+//TODO: maybe change hover effect
 const About = (): JSX.Element => {
 	return (
 		<Section>
@@ -45,14 +48,13 @@ const About = (): JSX.Element => {
 };
 
 const Section = styled.div`
-	// height: 100vh;
-	margin: 8vh 8vw 8vh 8vw;
+	// margin: 8vh 8vw 4vh 8vw; //TODO: maybe used fixed size
+	margin-bottom: 50px;
 
 	h1 {
 		font-size: 60px;
 		font-weight: 400;
 	}
-
 
 	h2 {
 		color: #c1c7e6;
@@ -76,7 +78,6 @@ const Section = styled.div`
 		padding: 7px 5px 5px 5px;
 
 		border-radius: 2px;
-		// width: 20%;
 		font-size: 2rem;
 
 		transition: background 100ms;
@@ -99,17 +100,29 @@ const Section = styled.div`
 	}
 
 	img {
-		// background: lightblue;
 		margin-left: auto;
 		margin-right: auto;
 		padding: 0;
+	}
+
+	@media only screen and (max-width: 1200px) {
+		img {
+			width: 100%;
+		}
+	}
+
+	@media only screen and (min-width: 1200px) {
+		img {
+			height: 100%;
+		}
 	}
 
 	@media only screen and (min-width: 1000px) {
 		.grid {
 			margin-top: 50px;
 			display: grid;
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: 3fr 4fr;
+			column-gap: 20px;
 		}
 	}
 
