@@ -3,7 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 //TODO: clean up fonts
 const GlobalStyle = createGlobalStyle`
 	body {
-		background: #1c1e21;
+		background: #1d1d26;
+		// background #191624;
 		color: white;
 		font-family: Roboto;
 		margin: 60px auto 0 auto;

@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+//TODO: maybe make horizontal cards too
+//TODO: box shadows
 const Card: React.FC<{ imgSrc: string, title: string, info: string, tags: string[] }>
 	= ({ imgSrc, title, info, tags }): JSX.Element => {
 		return (
@@ -16,8 +18,8 @@ const Card: React.FC<{ imgSrc: string, title: string, info: string, tags: string
 	};
 
 const Container = styled.div`
-	background: #2f3540;
-	// background: #2f3040;
+	// background: #2c273d;
+	background: #2f3040;
 	overflow: hidden;
 	width: 100%;
 	border-radius: 2px;

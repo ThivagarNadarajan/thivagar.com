@@ -42,7 +42,6 @@ const About = (): JSX.Element => {
 };
 
 const Section = styled.div`
-	// margin: 8vh 8vw 4vh 8vw; //TODO: maybe used fixed size
 	margin-bottom: 50px;
 
 	h1 {
@@ -52,6 +51,7 @@ const Section = styled.div`
 
 	h2 {
 		color: #a3b0c7;
+		// color: #6a7dab;
 		font-weight: 300;
 	}
 
