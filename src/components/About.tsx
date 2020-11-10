@@ -1,47 +1,41 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import desktop from '../assets/Desktop.png';
 import { InlineIcon } from '@iconify/react';
 import fiverrIcon from '@iconify/icons-jam/fiverr';
 import githubFilled from '@iconify/icons-ant-design/github-filled';
 import linkedinFilled from '@iconify/icons-ant-design/linkedin-filled';
 
-//TODO: maybe change viewport to regular
-//TODO: rm <br/> when done
 //TODO: clean up commented code everywhere
 //TODO: add button for email too
 //TODO: maybe change hover effect
 const About = (): JSX.Element => {
 	return (
 		<Section>
-			<div className="grid">
-				<div>
-					<h1>Thivagar</h1>
-					<h1>Nadarajan</h1>
-					<h2>Computer Science Student &amp; Freelance Web Developer</h2>
-					<p>
-						Hi there! I&apos;m a freelance web developer and a senior at the University
-						of Toronto studying Computer Science. Currently interning at
-						Environment &amp; Climate Change Canada.
+			<div>
+				<h1>Thivagar</h1>
+				<h1>Nadarajan</h1>
+				<h2>Computer Science Student &amp; Freelance Web Developer</h2>
+				<p>
+					Hi there! I&apos;m a freelance web developer and a senior at the University
+					of Toronto studying Computer Science. Currently interning at
+					Environment &amp; Climate Change Canada.
 					</p>
-					<hr />
-					<div>
-						<button>
-							<InlineIcon icon={fiverrIcon} />
-							{/* Fiverr */}
-						</button>
-						<button>
-							<InlineIcon icon={githubFilled} />
-							{/* Github */}
-						</button>
-						<button>
-							<InlineIcon icon={linkedinFilled} />
-							{/* LinkedIn */}
-						</button>
-					</div>
+				<hr />
+				<div>
+					<button>
+						<InlineIcon icon={fiverrIcon} />
+						{/* Fiverr */}
+					</button>
+					<button>
+						<InlineIcon icon={githubFilled} />
+						{/* Github */}
+					</button>
+					<button>
+						<InlineIcon icon={linkedinFilled} />
+						{/* LinkedIn */}
+					</button>
 				</div>
-				<img src={desktop} />
 			</div>
 		</Section>
 	);
@@ -57,7 +51,7 @@ const Section = styled.div`
 	}
 
 	h2 {
-		color: #c1c7e6;
+		color: #a3b0c7;
 		font-weight: 300;
 	}
 
@@ -96,39 +90,6 @@ const Section = styled.div`
 
 		:focus {
 			outline: none;
-		}
-	}
-
-	img {
-		margin-left: auto;
-		margin-right: auto;
-		padding: 0;
-	}
-
-	@media only screen and (max-width: 1200px) {
-		img {
-			width: 100%;
-		}
-	}
-
-	@media only screen and (min-width: 1200px) {
-		img {
-			height: 100%;
-		}
-	}
-
-	@media only screen and (min-width: 1000px) {
-		.grid {
-			margin-top: 50px;
-			display: grid;
-			grid-template-columns: 3fr 4fr;
-			column-gap: 20px;
-		}
-	}
-
-	@media only screen and (max-width: 1000px) {
-		img {
-			display: none;
 		}
 	}
 `;

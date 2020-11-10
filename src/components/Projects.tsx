@@ -48,17 +48,13 @@ const Cards = styled.div`
 	row-gap: 25px;
 	column-gap: 25px;
 
-	@media only screen and (min-width: 650px) {
+	@media only screen and (min-width: 700px) {
 		grid-template-columns: 1fr 1fr;
 	}
 
-	@media only screen and (min-width: 1000px) {
+	@media only screen and (min-width: 1200px) {
 		grid-template-columns: repeat(3, 1fr);
 	}
-
-	// @media only screen and (min-width: 1300px) {
-	// 	grid-template-columns: repeat(4, 1fr);
-	// }
 `;
 
 

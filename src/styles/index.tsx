@@ -3,14 +3,18 @@ import { createGlobalStyle } from 'styled-components';
 //TODO: clean up fonts
 const GlobalStyle = createGlobalStyle`
 	body {
-		background: #181a1c;
+		background: #1c1e21;
 		color: white;
 		font-family: Roboto;
 		margin: 60px auto 0 auto;
 		width: 50%;
 
-		@media only screen and (max-width: 600px) {
-			width: 90%;
+		@media only screen and (max-width: 1200px) {
+			width: 60%;
+		}
+
+		@media only screen and (max-width: 700px) {
+			width: 85%;
 		}
 	}
 	
