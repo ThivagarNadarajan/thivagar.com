@@ -22,7 +22,7 @@ const Projects = (): JSX.Element => {
 				<Card
 					imgSrc={nodeRoyale} title={'Node Royale'}
 					info={'2D battle royale shooter; last one standing wins '}
-					tags={['ReactJS', 'Node.js', 'WebSockets', 'SQLite 3']}
+					tags={['ReactJS', 'Node.js', 'WebSockets', 'SQLite3']}
 				/>
 				<Card
 					imgSrc={portfolio} title={'Portfolio'}
@@ -38,7 +38,7 @@ const Projects = (): JSX.Element => {
 				<Card
 					imgSrc={loanTracker} title={'Loan Tracker'}
 					info={'iOS application to keep track of loans with your contacts'}
-					tags={['Swift', 'SQLite 3']} />
+					tags={['Swift', 'SQLite3']} />
 				<Card
 					imgSrc={sleepSimple} title={'Sleep Simple'}
 					info={'iOS application to emit basic white noise'}
@@ -70,7 +70,7 @@ const Cards = styled.div`
 	@media only screen and (max-width: 1525px) {
 		grid-template-columns: 1fr;
 	}
-	
+
 	@media only screen and (max-width: 1200px) {
 		grid-template-columns: 1fr 1fr;
 	}

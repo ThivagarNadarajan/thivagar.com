@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-//TODO: maybe make horizontal cards too
+//TODO: send tags to the bottom of the page
 //TODO: box shadows
 const Card: React.FC<{ imgSrc: string, title: string, info: string, tags: string[] }>
 	= ({ imgSrc, title, info, tags }): JSX.Element => {
