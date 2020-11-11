@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
 //TODO: clean up fonts
+//TODO: consider turning the whole page into a grid and adding row gaps 
+//instead of adding margins for each section
 const GlobalStyle = createGlobalStyle`
 	body {
 		background: #1d1d26;
@@ -8,15 +10,16 @@ const GlobalStyle = createGlobalStyle`
 		color: white;
 		font-family: Roboto;
 		margin: 60px auto 0 auto;
-		width: 50%;
+		width: 60%;
 
 		@media only screen and (max-width: 1200px) {
-			width: 60%;
+			width: 70%;
 		}
 
-		@media only screen and (max-width: 700px) {
+		@media only screen and (max-width: 800px) {
 			width: 85%;
 		}
+
 	}
 	
 	h1, h2, h3, h4 {

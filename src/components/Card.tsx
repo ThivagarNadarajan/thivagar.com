@@ -29,7 +29,7 @@ const Container = styled.div`
 	}
 
 	div {
-		margin: 5%;
+		margin: 5% 5% 3% 5%;
 		height: max-content;
 	}
 
@@ -41,12 +41,19 @@ const Container = styled.div`
 	span {
 		display: inline-block;
 		margin-right: 7px;
+		margin-bottom: 7px;
 		background: #4d5769;
 		padding: 6px;
 		border-radius: 3px;
 		font-size: small;
 	}
+
+	@media only screen and (min-width: 1200px) and (max-width: 1525px) {
+		display: grid;
+		grid-template-columns: 2fr 3fr;
+	}
 `;
+
 
 
 export default Card;

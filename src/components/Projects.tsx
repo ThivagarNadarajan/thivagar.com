@@ -7,6 +7,8 @@ import nodeRoyale from '../assets/Node Royale.png';
 import anjaleeFineArts from '../assets/Anjalee Fine Arts.png';
 import teaforge from '../assets/Teaforge.png';
 import portfolio from '../assets/Portfolio.png';
+import sleepSimple from '../assets/Sleep Simple.png';
+import loanTracker from '../assets/Loan Tracker.png';
 
 const Projects = (): JSX.Element => {
 	return (
@@ -14,30 +16,33 @@ const Projects = (): JSX.Element => {
 			<h1>Projects</h1>
 			<Cards>
 				<Card
+					imgSrc={teaforge} title={'Teaforge Games'}
+					info={'Website to play social deduction games (ie. Resistance, Werewolf)'}
+					tags={['ReactJS', 'TypeScript', 'Node.js', 'Socket.io']} />
+				<Card
 					imgSrc={nodeRoyale} title={'Node Royale'}
-					info={'This game blah blah lorem ipsum lol'}
-					tags={['React', 'Node.js']}
+					info={'2D battle royale shooter; last one standing wins '}
+					tags={['ReactJS', 'Node.js', 'WebSockets', 'SQLite 3']}
 				/>
 				<Card
-					imgSrc={teaforge} title={'Teaforge Games'}
-					info={'This game blah blah lorem ipsum lol'}
-					tags={['React', 'Node.js']} />
+					imgSrc={portfolio} title={'Portfolio'}
+					info={
+						'Personal portfolio website to show my projects & experience '
+						+ '(this website).'
+					}
+					tags={['ReactJS', 'TypeScript']} />
 				<Card
 					imgSrc={anjaleeFineArts} title={'Anjalee Fine Arts'}
-					info={'This game blah blah lorem ipsum lol'}
-					tags={['React', 'Node.js']} />
+					info={'Website to promote a local music school.'}
+					tags={['HTML5', 'CSS3', 'Bootstrap 4']} />
 				<Card
-					imgSrc={portfolio} title={'Personal Portfolio'}
-					info={'This game blah blah lorem ipsum lol'}
-					tags={['React', 'Node.js']} />
+					imgSrc={loanTracker} title={'Loan Tracker'}
+					info={'iOS application to keep track of loans with your contacts'}
+					tags={['Swift', 'SQLite 3']} />
 				<Card
-					imgSrc={nodeRoyale} title={'Sleep Simple'}
-					info={'This game blah blah lorem ipsum lol'}
-					tags={['React', 'Node.js']} />
-				<Card
-					imgSrc={nodeRoyale} title={'Loan Tracker'}
-					info={'This game blah blah lorem ipsum lol'}
-					tags={['React', 'Node.js']} />
+					imgSrc={sleepSimple} title={'Sleep Simple'}
+					info={'iOS application to emit basic white noise'}
+					tags={['Swift']} />
 			</Cards>
 		</Section>
 	);
@@ -55,15 +60,22 @@ const Section = styled.div`
 const Cards = styled.div`
 	margin-top: 25px;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
 	row-gap: 25px;
 	column-gap: 25px;
 
+	@media only screen and (min-width: 1525px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@media only screen and (max-width: 1525px) {
+		grid-template-columns: 1fr;
+	}
+	
 	@media only screen and (max-width: 1200px) {
 		grid-template-columns: 1fr 1fr;
 	}
 
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 800px) {
 		grid-template-columns: 1fr;
 	}
 `;
