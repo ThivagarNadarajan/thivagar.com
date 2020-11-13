@@ -39,17 +39,16 @@ const Container = styled.div`
 	}
 
 	span {
-		background: #4d5769;
-
 		display: inline-block;
-		
-		width: max-content;
-		padding: 6px;
 		margin-right: 7px;
-		margin-bottom: 4.5%;
-
+		// background: #4d5769;
+		background: #872816;
+		padding: 6px;
 		border-radius: 3px;
 		font-size: small;
+		width: max-content;
+
+		margin-bottom: 4.5%;
 	}
 
 	@media only screen and (min-width: 0) and (max-width: 1240px) {

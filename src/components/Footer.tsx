@@ -14,7 +14,8 @@ const Footer = (): JSX.Element => {
 };
 
 const StyledFooter = styled.footer`
-	background: red;
+	// background: #1d1d26;
+	background: #262642;
 `;
 
 const SectionStyles = styled(Section)`

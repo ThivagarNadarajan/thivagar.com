@@ -51,8 +51,7 @@ const StyledSection = styled(Section)`
 	}
 
 	h2 {
-		color: #a3b0c7;
-		// color: #6a7dab;
+		color: #872816;
 		font-weight: 300;
 	}
 
@@ -82,7 +81,7 @@ const StyledSection = styled(Section)`
 		border: 0;
 
 		:hover {
-			background: #5279d1;
+			background: #872816;
 			cursor: pointer;
 		}
 
