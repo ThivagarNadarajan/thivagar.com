@@ -7,10 +7,13 @@ const Experience = (): JSX.Element => {
 	return (
 		<Section>
 			<h1>Experience</h1>
-			<Collapsible
-				title={'Environment & Climate Change Canada'}
-				description={'placeholder description lorem ipsum blah blah'}
-			/>
+			<Collapsibles>
+				<Collapsible
+					role={'Software Developer Intern'}
+					company={'Environment & Climate Change Canada'}
+					description={['lalala', 'tesadva', 'lorem ipsum lol']}
+				/>
+			</Collapsibles>
 		</Section>
 	);
 };
@@ -22,6 +25,10 @@ const Section = styled.div`
 	}
 
 	margin-bottom: 30px;
+`;
+
+const Collapsibles = styled.div`
+	margin-top: 25px;
 `;
 
 export default Experience;

@@ -5,24 +5,28 @@ import Card from './Card';
 
 import nodeRoyale from '../assets/Node Royale.png';
 import anjaleeFineArts from '../assets/Anjalee Fine Arts.png';
-import teaforge from '../assets/Teaforge.png';
+import teaforgeGames from '../assets/Teaforge Games.png';
 import portfolio from '../assets/Portfolio.png';
 import sleepSimple from '../assets/Sleep Simple.png';
 import loanTracker from '../assets/Loan Tracker.png';
 
+//TODO: github links
 const Projects = (): JSX.Element => {
 	return (
 		<Section>
 			<h1>Projects</h1>
 			<Cards>
 				<Card
-					imgSrc={teaforge} title={'Teaforge Games'}
+					imgSrc={teaforgeGames} title={'Teaforge Games'}
 					info={'Website to play social deduction games (ie. Resistance, Werewolf)'}
-					tags={['ReactJS', 'TypeScript', 'Node.js', 'Socket.io']} />
+					tags={
+						['ReactJS', 'TypeScript', 'Node.js',
+							'Express', 'Socket.io']
+					} />
 				<Card
 					imgSrc={nodeRoyale} title={'Node Royale'}
-					info={'2D battle royale shooter; last one standing wins '}
-					tags={['ReactJS', 'Node.js', 'WebSockets', 'SQLite3']}
+					info={'2D multiplayer battle royale shooter; last one standing wins '}
+					tags={['ReactJS', 'Node.js', 'Express', 'WebSockets', 'SQLite3']}
 				/>
 				<Card
 					imgSrc={portfolio} title={'Portfolio'}
@@ -63,6 +67,7 @@ const Cards = styled.div`
 	row-gap: 25px;
 	column-gap: 25px;
 
+
 	@media only screen and (min-width: 1525px) {
 		grid-template-columns: repeat(3, 1fr);
 	}
@@ -71,7 +76,7 @@ const Cards = styled.div`
 		grid-template-columns: 1fr;
 	}
 
-	@media only screen and (max-width: 1200px) {
+	@media only screen and (max-width: 1240px) {
 		grid-template-columns: 1fr 1fr;
 	}
 

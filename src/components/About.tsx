@@ -9,6 +9,7 @@ import linkedinFilled from '@iconify/icons-ant-design/linkedin-filled';
 //TODO: clean up commented code everywhere
 //TODO: add button for email too
 //TODO: maybe change hover effect
+//TODO: link resume somewhere
 const About = (): JSX.Element => {
 	return (
 		<Section>
