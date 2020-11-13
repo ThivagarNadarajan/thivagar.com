@@ -1,30 +1,99 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Section from '../styles/Section';
+import { InlineIcon } from '@iconify/react';
+import fiverrIcon from '@iconify/icons-jam/fiverr';
+import githubFilled from '@iconify/icons-ant-design/github-filled';
+import bxlLinkedin from '@iconify-icons/bx/bxl-linkedin';
+import bxEnvelope from '@iconify-icons/bx/bx-envelope';
 
 const Footer = (): JSX.Element => {
 	return (
-		<StyledFooter>
-			<SectionStyles>
-				<p>test description</p>
-			</SectionStyles>
-		</StyledFooter>
+		<>
+			<Ruler />
+			<Section>
+				<div>
+					<a
+						href='https://www.fiverr.com/thiv_nadarajan'
+						target='_blank'
+						rel="noreferrer"
+					>
+						<InlineIcon icon={fiverrIcon} />
+					</a>
+					<a
+						href='https://www.linkedin.com/in/thivagar-nadarajan-40802118a'
+						target='_blank'
+						rel="noreferrer"
+					>
+						<InlineIcon icon={bxlLinkedin} />
+					</a>
+					<a
+						href='https://github.com/ThivagarNadarajan'
+						target='_blank'
+						rel="noreferrer"
+					>
+						<InlineIcon icon={githubFilled} />
+					</a>
+					<a href='mailto:thiv.nadarajan@gmail.com'>
+						<InlineIcon icon={bxEnvelope} />
+					</a>
+				</div>
+				<p>© {(new Date()).getFullYear()} Thivagar Nadarajan</p>
+			</Section>
+		</>
 	);
 };
 
-const StyledFooter = styled.footer`
-	// background: #1d1d26;
-	background: #262642;
+const Ruler = styled.hr`
+	background: #3f4157;
+	border: #3f4157;
+	height: 3px;
+	margin: 0;
 `;
 
-const SectionStyles = styled(Section)`
-	padding: 10px;
+const Section = styled.div`
+	padding: 20px 0 20px 0;
 
-	p {
-		margin: auto;
+	@media only screen and (max-width: 600px) {
+		text-align: center;
 	}
 
+	div {
+		margin-bottom: 20px;
+		@media only screen and (min-width: 600px) {
+			float: right;
+			margin: 0;
+		}
+	}
+
+	//TODO: get thinner font weight
+	p {
+		margin: 0;
+		color: white;
+		font-size: 17px;
+	}
+
+	a {
+		margin-right: 10px;
+		background: none;
+		border: none;
+
+		color: #3f4157;
+		font-size: 20px;
+
+		transition: background 100ms;
+
+		@media (hover: hover) {
+			:hover {
+				color: white;
+				cursor: pointer;
+			}
+		}
+
+		:focus {
+			outline: none;
+		}
+	}
 `;
 
 

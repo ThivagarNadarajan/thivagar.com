@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Card from './Card';
-import Section from '../styles/Section';
 
 import nodeRoyale from '../assets/Node Royale.png';
 import anjaleeFineArts from '../assets/Anjalee Fine Arts.png';
@@ -11,15 +10,17 @@ import portfolio from '../assets/Portfolio.png';
 import sleepSimple from '../assets/Sleep Simple.png';
 import loanTracker from '../assets/Loan Tracker.png';
 
-//TODO: github links
+//TODO: change sleep simple link when the github repo changes
 //TODO: bring down the phone imgs a little for loan tracker
+//TODO: change hover colour and maybe tags color too
 const Projects = (): JSX.Element => {
 	return (
-		<StyledSection>
+		<Section>
 			<h1>Projects</h1>
 			<Cards>
 				<Card
 					imgSrc={teaforgeGames} title={'Teaforge Games'}
+					link={'https://teaforge.com'}
 					info={'Website to play social deduction games (ie. Resistance, Werewolf)'}
 					tags={
 						['ReactJS', 'TypeScript', 'Node.js',
@@ -27,6 +28,7 @@ const Projects = (): JSX.Element => {
 					} />
 				<Card
 					imgSrc={nodeRoyale} title={'Node Royale'}
+					link={'node-royale.herokuapp.com'}
 					info={'2D multiplayer battle royale shooter; last one standing wins '}
 					tags={['ReactJS', 'Node.js', 'Express', 'WebSockets', 'SQLite3']}
 				/>
@@ -39,22 +41,25 @@ const Projects = (): JSX.Element => {
 					tags={['ReactJS', 'TypeScript']} />
 				<Card
 					imgSrc={anjaleeFineArts} title={'Anjalee Fine Arts'}
+					link={'https://anjaleefinearts.com'}
 					info={'Website to promote a local music school.'}
 					tags={['HTML5', 'CSS3', 'Bootstrap 4']} />
 				<Card
 					imgSrc={loanTracker} title={'Loan Tracker'}
+					link={'https://github.com/ThivagarNadarajan/Loan-Tracker'}
 					info={'iOS application to keep track of loans with your contacts'}
 					tags={['Swift', 'SQLite3']} />
 				<Card
 					imgSrc={sleepSimple} title={'Sleep Simple'}
+					link={'https://github.com/ThivagarNadarajan/White-Noise-App'}
 					info={'iOS application to emit basic white noise'}
 					tags={['Swift']} />
 			</Cards>
-		</StyledSection>
+		</Section>
 	);
 };
 
-const StyledSection = styled(Section)`
+const Section = styled.div`
 	margin-bottom: 30px;
 `;
 

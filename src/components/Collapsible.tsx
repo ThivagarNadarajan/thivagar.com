@@ -1,33 +1,47 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
+import { InlineIcon } from '@iconify/react';
+import arrowDownAlt2 from '@iconify-icons/dashicons/arrow-down-alt2';
+
 //TODO: add the collapse animation
-const Collapsible: React.FC<{ role: string, company: string, description: string[] }>
-	= ({ role, company, description }): JSX.Element => {
+const Collapsible: React.FC<{
+	role: string,
+	company: string,
+	description: string[],
+	duration: string
+}>
+	= ({ role, company, description, duration }): JSX.Element => {
 		const [collapse, setCollapse] = useState(true);
 		const toggleCollapse = () => setCollapse(!collapse);
 
 		return (
-			<Container collapse={collapse}>
+			<Container>
 				<div className="head">
 					<div>
-						<h2>{role}</h2>
-						<h3>{company}</h3>
-						<h4>Nov 10, 2020</h4>
+						<h2>{company}</h2>
+						<h3>{role}</h3>
+						<h4>{duration}</h4>
 					</div>
-					<button onClick={toggleCollapse}>+</button>
+					<button onClick={toggleCollapse}>
+						<InlineIcon icon={arrowDownAlt2} />
+					</button>
 				</div>
-				<div className="body">
-					<ul>
-						{description.map(d => <li key={d}>{d}</li>)}
-					</ul>
-				</div>
+				{collapse
+					? <></>
+					: (
+						<div className="body">
+							<ul>
+								{description.map(d => <li key={d}>{d}</li>)}
+							</ul>
+						</div>
+					)
+				}
 			</Container>
 		);
 	};
 
-interface ContainerProps { collapse: boolean }
-const Container = styled.div<ContainerProps>`
+const Container = styled.div`
 	width: 100% - 10px;
 	border-radius: 2px;
 	overflow: hidden;
@@ -39,13 +53,22 @@ const Container = styled.div<ContainerProps>`
 		grid-template-columns: 10fr 1fr;
 	}
 
+	h2 {
+		font-size: 22px;
+	}
+
+	h3 {
+		font-size: 17px;
+	}
+	 
+	h4 {
+		font-size: 15px;
+	}
+
 	.body {
 		margin: 0;
+		padding: 10px;
 		background: #3f4157;
-		transition: padding-top 0.3s;
-		overflow: hidden;
-
-		height: ${({ collapse }) => collapse ? '0;' : 'max-content; padding: 10px;'}
 	}
 
 	ul {
@@ -53,7 +76,27 @@ const Container = styled.div<ContainerProps>`
 	}
 
 	button {
+		color: white;
+		background: none;
+		border: none;
+		font-size: 30px;
+
+		height: max-content;
+		width: max-content;
+
+		margin: auto;
 		float: right;
+
+		@media (hover: hover) {
+			:hover {
+				color: #752d20;
+				cursor: pointer;
+			}
+		}
+
+		:focus {
+			outline: none;
+		}
 	}
 `;
 

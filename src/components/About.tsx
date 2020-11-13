@@ -1,20 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Section from '../styles/Section';
-
 import { InlineIcon } from '@iconify/react';
 import fiverrIcon from '@iconify/icons-jam/fiverr';
 import githubFilled from '@iconify/icons-ant-design/github-filled';
-import linkedinFilled from '@iconify/icons-ant-design/linkedin-filled';
+import bxlLinkedin from '@iconify-icons/bx/bxl-linkedin';
+import bxEnvelope from '@iconify-icons/bx/bx-envelope';
 
 //TODO: clean up commented code everywhere
-//TODO: add button for email too
 //TODO: maybe change hover effect
-//TODO: link resume somewhere
+//TODO: link resume
+//TODO: replace the filter: brightness on button with another color
 const About = (): JSX.Element => {
 	return (
-		<StyledSection>
+		<Section>
 			<h1>Thivagar</h1>
 			<h1>Nadarajan</h1>
 			<h2>Computer Science Student &amp; Freelance Web Developer</h2>
@@ -22,27 +21,41 @@ const About = (): JSX.Element => {
 				Hi there! I&apos;m a freelance web developer and a senior at the University
 				of Toronto studying Computer Science. Currently interning at
 				Environment &amp; Climate Change Canada.
-					</p>
+			</p>
+			<button>View Resume</button>
 			<hr />
 			<div>
-				<button>
+				<a
+					href='https://www.fiverr.com/thiv_nadarajan'
+					target='_blank'
+					rel="noreferrer"
+				>
 					<InlineIcon icon={fiverrIcon} />
-					{/* Fiverr */}
-				</button>
-				<button>
+				</a>
+				<a
+					href='https://www.linkedin.com/in/thivagar-nadarajan-40802118a'
+					target='_blank'
+					rel="noreferrer"
+				>
+					<InlineIcon icon={bxlLinkedin} />
+				</a>
+				<a
+					href='https://github.com/ThivagarNadarajan'
+					target='_blank'
+					rel="noreferrer"
+				>
 					<InlineIcon icon={githubFilled} />
-					{/* Github */}
-				</button>
-				<button>
-					<InlineIcon icon={linkedinFilled} />
-					{/* LinkedIn */}
-				</button>
+				</a>
+				<a href='mailto:thiv.nadarajan@gmail.com'>
+					<InlineIcon icon={bxEnvelope} />
+				</a>
+				<br />
 			</div>
-		</StyledSection>
+		</Section>
 	);
 };
 
-const StyledSection = styled(Section)`
+const Section = styled.div`
 	margin-bottom: 50px;
 
 	h1 {
@@ -51,7 +64,7 @@ const StyledSection = styled(Section)`
 	}
 
 	h2 {
-		color: #872816;
+		color: #752d20;
 		font-weight: 300;
 	}
 
@@ -65,9 +78,37 @@ const StyledSection = styled(Section)`
 	p {
 		font-size: 23px;
 		margin-top: 1rem;
+		margin-bottom: 0;
 	}
 
 	button {
+		margin: 20px 0 10px 0;
+	
+		padding: 8px;
+	
+		border-radius: 5px;
+		width: max-content;
+		font-size: 1.2rem;
+	
+		transition: background 100ms;
+		
+		:focus {
+			outline: none;
+		}
+
+		background: #752d20; 
+		color: white;
+		border: 2px solid #752d20;
+
+		@media (hover: hover) {
+			:hover {
+				filter: brightness(85%);
+				cursor: pointer;
+			}
+		}
+	}
+
+	a {
 		margin-right: 10px;
 		padding: 7px 5px 5px 5px;
 
@@ -81,7 +122,7 @@ const StyledSection = styled(Section)`
 		border: 0;
 
 		:hover {
-			background: #872816;
+			background: #752d20;
 			cursor: pointer;
 		}
 
