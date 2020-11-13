@@ -10,6 +10,8 @@ import bxEnvelope from '@iconify-icons/bx/bx-envelope';
 //TODO: maybe change hover effect
 //TODO-DONE: link resume
 //TODO: replace the 'filter: brightness' on button with another color
+//TODO: maybe change button hover effect
+//TODO: change subheader color
 const About = (): JSX.Element => {
 	return (
 		<Section>

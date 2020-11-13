@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 import Collapsible from './Collapsible';
 
+//TODO: add proper exp descriptions
+//TODO: maybe change arrow hover effect
 const Experience = (): JSX.Element => {
 	return (
 		<Section>
