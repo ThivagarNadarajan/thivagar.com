@@ -10,7 +10,7 @@ import portfolio from '../assets/Portfolio.png';
 import sleepSimple from '../assets/Sleep Simple.png';
 import loanTracker from '../assets/Loan Tracker.png';
 
-//TODO: change sleep simple link when the github repo changes
+//TODO-DONE: change sleep simple link when the github repo changes
 //TODO: bring down the phone imgs a little for loan tracker
 //TODO: change hover colour and maybe tags color too
 const Projects = (): JSX.Element => {

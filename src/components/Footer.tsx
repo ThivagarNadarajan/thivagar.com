@@ -66,11 +66,11 @@ const Section = styled.div`
 		}
 	}
 
-	//TODO: get thinner font weight
 	p {
 		margin: 0;
 		color: white;
 		font-size: 17px;
+		font-weight: 100;
 	}
 
 	a {

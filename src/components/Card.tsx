@@ -46,6 +46,7 @@ const Container = styled.a`
 		padding: 4.5% 4.5% 0 4.5%;
 	}
 
+	//TODO: decide on background color
 	span {
 		display: inline-block;
 		margin-right: 7px;

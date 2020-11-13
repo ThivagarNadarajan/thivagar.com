@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import { InlineIcon } from '@iconify/react';
 import arrowDownAlt2 from '@iconify-icons/dashicons/arrow-down-alt2';
 
-//TODO: add the collapse animation
 const Collapsible: React.FC<{
 	role: string,
 	company: string,

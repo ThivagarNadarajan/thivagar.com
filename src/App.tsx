@@ -6,7 +6,7 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
 
-//TODO: change favicon
+//TODO-DONE: change favicon
 
 const App = (): JSX.Element => {
 	return (

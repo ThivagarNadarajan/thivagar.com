@@ -1,8 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-//TODO: clean up fonts
-//TODO: consider turning the whole page into a grid and adding row gaps 
-//instead of adding margins for each section
 const GlobalStyle = createGlobalStyle`
 	body {
 		background: #1d1d26;
