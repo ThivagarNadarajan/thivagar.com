@@ -2,10 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Collapsible from './Collapsible';
+import Section from '../styles/Section';
 
 const Experience = (): JSX.Element => {
 	return (
-		<Section>
+		<StyledSection>
 			<h1>Experience</h1>
 			<Collapsibles>
 				<Collapsible
@@ -14,16 +15,11 @@ const Experience = (): JSX.Element => {
 					description={['lalala', 'tesadva', 'lorem ipsum lol']}
 				/>
 			</Collapsibles>
-		</Section>
+		</StyledSection>
 	);
 };
 
-const Section = styled.div`
-	h1 {
-		font-size: 50px;
-		font-weight: 400;
-	}
-
+const StyledSection = styled(Section)`
 	margin-bottom: 30px;
 `;
 

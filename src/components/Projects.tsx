@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Card from './Card';
+import Section from '../styles/Section';
 
 import nodeRoyale from '../assets/Node Royale.png';
 import anjaleeFineArts from '../assets/Anjalee Fine Arts.png';
@@ -11,9 +12,10 @@ import sleepSimple from '../assets/Sleep Simple.png';
 import loanTracker from '../assets/Loan Tracker.png';
 
 //TODO: github links
+//TODO: bring down the phone imgs a little for loan tracker
 const Projects = (): JSX.Element => {
 	return (
-		<Section>
+		<StyledSection>
 			<h1>Projects</h1>
 			<Cards>
 				<Card
@@ -48,16 +50,11 @@ const Projects = (): JSX.Element => {
 					info={'iOS application to emit basic white noise'}
 					tags={['Swift']} />
 			</Cards>
-		</Section>
+		</StyledSection>
 	);
 };
 
-const Section = styled.div`
-	h1 {
-		font-size: 50px;
-		font-weight: 400;
-	}
-
+const StyledSection = styled(Section)`
 	margin-bottom: 30px;
 `;
 
