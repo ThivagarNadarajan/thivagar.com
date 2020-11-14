@@ -7,7 +7,7 @@ import githubFilled from '@iconify/icons-ant-design/github-filled';
 import bxlLinkedin from '@iconify-icons/bx/bxl-linkedin';
 import bxEnvelope from '@iconify-icons/bx/bx-envelope';
 
-//TODO: maybe change hover effect
+//TODO: maybe change hover effect on links
 //TODO-DONE: link resume
 //TODO: replace the 'filter: brightness' on button with another color
 //TODO: maybe change button hover effect

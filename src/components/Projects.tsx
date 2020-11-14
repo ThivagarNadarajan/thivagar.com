@@ -21,7 +21,7 @@ const Projects = (): JSX.Element => {
 				<Card
 					imgSrc={teaforgeGames} title={'Teaforge Games'}
 					link={'https://teaforge.com'}
-					info={'Website to play social deduction games (ie. Resistance, Werewolf)'}
+					info={'Website to play social deduction games (Resistance, Werewolf etc.)'}
 					tags={
 						['ReactJS', 'TypeScript', 'Node.js',
 							'Express', 'Socket.io']
