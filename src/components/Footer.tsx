@@ -57,16 +57,10 @@ const Ruler = styled.hr`
 const Section = styled.div`
 	padding: 20px 0 20px 0;
 
-	@media only screen and (max-width: 600px) {
-		text-align: center;
-	}
-
 	div {
 		margin-bottom: 20px;
-		@media only screen and (min-width: 600px) {
-			float: right;
-			margin: 0;
-		}
+		float: right;
+		margin: 0;
 	}
 
 	p {
