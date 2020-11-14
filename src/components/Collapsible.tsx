@@ -7,7 +7,7 @@ import { InlineIcon } from '@iconify/react';
 import arrowDownAlt2 from '@iconify-icons/dashicons/arrow-down-alt2';
 
 //TODO: change font weights and maybe the font colors of certain headers
-//TODO: fix arrow display on smaller screens
+//TODO: change body color or something
 const Collapsible: React.FC<{
 	role: string,
 	company: string,
@@ -20,15 +20,13 @@ const Collapsible: React.FC<{
 
 		return (
 			<Container>
-				<div className="head">
+				<div className="head" onClick={toggleCollapse}>
 					<div>
 						<h2>{company}</h2>
 						<h3>{role}</h3>
 						<h4>{duration}</h4>
 					</div>
-					<button onClick={toggleCollapse}>
-						<InlineIcon icon={arrowDownAlt2} />
-					</button>
+					<button><InlineIcon icon={arrowDownAlt2} /></button>
 				</div>
 				{collapse
 					? <></>
@@ -54,6 +52,23 @@ const Container = styled.div`
 		padding: 10px;
 		display: grid;
 		grid-template-columns: 10fr 1fr;
+
+		@media only screen and (max-width: 600px) {
+			grid-template-columns: 1fr;
+
+			button {
+				display: none;
+			}
+		}
+
+		transition: background 100ms;
+
+		@media (hover: hover) {
+			:hover {	
+				background: ${colors.fg};
+				cursor: pointer;
+			}
+		}
 	}
 
 	h2 {
@@ -65,7 +80,6 @@ const Container = styled.div`
 	}
 	 
 	h4 {
-		font-family: Roboto;
 		font-weight: 100;
 		font-size: 15px;
 	}
@@ -84,20 +98,13 @@ const Container = styled.div`
 		color: ${colors.font};
 		background: none;
 		border: none;
+		border-radius: 3px;
 		font-size: 30px;
 
-		height: max-content;
-		width: max-content;
-
 		margin: auto;
-		float: right;
-
-		@media (hover: hover) {
-			:hover {
-				color: ${colors.accent};
-				cursor: pointer;
-			}
-		}
+		width: 100%;
+		height: 100%;
+		padding-top: 5%;
 
 		:focus {
 			outline: none;
