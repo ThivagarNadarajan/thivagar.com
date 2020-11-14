@@ -71,7 +71,6 @@ const Section = styled.div`
 
 	p {
 		margin: 0;
-		color: white;
 		font-size: 17px;
 		font-weight: 100;
 	}
@@ -88,7 +87,7 @@ const Section = styled.div`
 
 		@media (hover: hover) {
 			:hover {
-				color: white;
+				color: ${colors.font};
 				cursor: pointer;
 			}
 		}

@@ -81,7 +81,7 @@ const Container = styled.div`
 	}
 
 	button {
-		color: white;
+		color: ${colors.font};
 		background: none;
 		border: none;
 		font-size: 30px;

@@ -27,7 +27,7 @@ const Card: React.FC<{
 
 const Container = styled.a`
 	text-decoration: none;
-	color: white;
+	color: ${colors.font};
 	background: ${colors.bg};
 	overflow: hidden;
 	width: 100%;

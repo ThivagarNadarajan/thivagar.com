@@ -72,7 +72,8 @@ const Section = styled.div`
 		margin: 1rem 0 1.5rem 0;
 		width: 50px;
 		height: 6px;
-		background: white;
+		border: ${colors.font};
+		background: ${colors.font};
 	}
 
 	p {
@@ -98,7 +99,7 @@ const Section = styled.div`
 
 		background: ${colors.accent}; 
 		border: 2px solid ${colors.accent};
-		color: white;
+		color: ${colors.font};
 
 		@media (hover: hover) {
 			:hover {
@@ -119,7 +120,7 @@ const Section = styled.div`
 		transition: background 100ms;
 
 		background: none;
-		color: white;
+		color: ${colors.font};
 		border: 0;
 
 		@media (hover: hover) {

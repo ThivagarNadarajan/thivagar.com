@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const colors = {
+	font: 'white',
 	bg: '#2f3040',
 	fg: '#3f4157',
 	accent: '#bd604f',
@@ -10,7 +11,7 @@ export const colors = {
 const GlobalStyle = createGlobalStyle`
 	body {
 		background: #1d1d26;
-		color: white;
+		color: ${colors.font};
 		font-family: Roboto;
 		margin: 60px auto 0 auto;
 		width: 60%;
