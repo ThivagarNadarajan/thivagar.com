@@ -10,7 +10,6 @@ import portfolio from '../assets/Portfolio.png';
 import sleepSimple from '../assets/Sleep Simple.png';
 import loanTracker from '../assets/Loan Tracker.png';
 
-//TODO-DONE: change sleep simple link when the github repo changes
 const Projects = (): JSX.Element => {
 	return (
 		<Section>
@@ -50,7 +49,7 @@ const Projects = (): JSX.Element => {
 					tags={['Swift', 'SQLite3']} />
 				<Card
 					imgSrc={sleepSimple} title={'Sleep Simple'}
-					link={'https://github.com/ThivagarNadarajan/White-Noise-App'}
+					link={'https://github.com/ThivagarNadarajan/Sleep-Simple'}
 					info={'iOS application to emit basic white noise'}
 					tags={['Swift']} />
 			</Cards>
