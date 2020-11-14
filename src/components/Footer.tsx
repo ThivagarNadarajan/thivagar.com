@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { colors } from '../styles';
+
 import { InlineIcon } from '@iconify/react';
 import fiverrIcon from '@iconify/icons-jam/fiverr';
 import githubFilled from '@iconify/icons-ant-design/github-filled';
@@ -46,8 +48,8 @@ const Footer = (): JSX.Element => {
 };
 
 const Ruler = styled.hr`
-	background: #3f4157;
-	border: #3f4157;
+	background: ${colors.bg};
+	border: ${colors.bg};
 	height: 3px;
 	margin: 0;
 `;
@@ -79,7 +81,7 @@ const Section = styled.div`
 		background: none;
 		border: none;
 
-		color: #3f4157;
+		color: ${colors.bg};
 		font-size: 20px;
 
 		transition: background 100ms;

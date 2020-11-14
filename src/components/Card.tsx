@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { colors } from '../styles/index';
+
 const Card: React.FC<{
 	imgSrc: string,
 	title: string,
-	link?: string,
+	link: string,
 	info: string,
 	tags: string[]
 }>
@@ -26,7 +28,7 @@ const Card: React.FC<{
 const Container = styled.a`
 	text-decoration: none;
 	color: white;
-	background: #2f3040;
+	background: ${colors.bg};
 	overflow: hidden;
 	width: 100%;
 	border-radius: 2px;
@@ -34,6 +36,12 @@ const Container = styled.a`
 
 	display: flex;
 	flex-direction: column;
+
+	@media (hover: hover) {
+		:hover {
+			background: ${colors.fg};
+		}
+	}
 
 	img {
 		width: 100%;
@@ -46,18 +54,19 @@ const Container = styled.a`
 		padding: 4.5% 4.5% 0 4.5%;
 	}
 
-	//TODO: decide on background color
 	span {
 		display: inline-block;
 		margin-right: 7px;
-		// background: #4d5769;
-		background: #752d20;
+
+		background: ${colors.accent};
+
 		padding: 6px;
 		border-radius: 3px;
 		font-size: small;
 		width: max-content;
 
 		margin-bottom: 4.5%;
+	
 	}
 
 	@media only screen and (min-width: 0) and (max-width: 1240px) {

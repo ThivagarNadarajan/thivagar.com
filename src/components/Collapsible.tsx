@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
+import { colors } from '../styles';
+
 import { InlineIcon } from '@iconify/react';
 import arrowDownAlt2 from '@iconify-icons/dashicons/arrow-down-alt2';
 
@@ -48,7 +50,7 @@ const Container = styled.div`
 	overflow: hidden;
 	
 	.head {
-		background: #2f3040;
+		background: ${colors.bg};
 		padding: 10px;
 		display: grid;
 		grid-template-columns: 10fr 1fr;
@@ -71,7 +73,7 @@ const Container = styled.div`
 	.body {
 		margin: 0;
 		padding: 10px;
-		background: #3f4157;
+		background: ${colors.fg};
 	}
 
 	ul {
@@ -92,7 +94,7 @@ const Container = styled.div`
 
 		@media (hover: hover) {
 			:hover {
-				color: #752d20;
+				color: ${colors.accent};
 				cursor: pointer;
 			}
 		}

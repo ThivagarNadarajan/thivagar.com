@@ -12,7 +12,6 @@ import loanTracker from '../assets/Loan Tracker.png';
 
 //TODO-DONE: change sleep simple link when the github repo changes
 //TODO: bring down the phone imgs a little for loan tracker
-//TODO: change hover colour and maybe tags color too
 const Projects = (): JSX.Element => {
 	return (
 		<Section>
@@ -34,6 +33,7 @@ const Projects = (): JSX.Element => {
 				/>
 				<Card
 					imgSrc={portfolio} title={'Portfolio'}
+					link={'#'}
 					info={
 						'Personal portfolio website to show my projects & experience '
 						+ '(this website).'

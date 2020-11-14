@@ -1,5 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 
+export const colors = {
+	bg: '#2f3040',
+	fg: '#3f4157',
+	accent: '#bd604f',
+	accentHover: '#bd604f'
+};
+
 const GlobalStyle = createGlobalStyle`
 	body {
 		background: #1d1d26;

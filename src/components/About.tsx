@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { colors } from '../styles';
+
 import { InlineIcon } from '@iconify/react';
 import fiverrIcon from '@iconify/icons-jam/fiverr';
 import githubFilled from '@iconify/icons-ant-design/github-filled';
@@ -65,7 +67,7 @@ const Section = styled.div`
 	}
 
 	h2 {
-		color: #752d20;
+		color: ${colors.accent};
 		font-weight: 300;
 	}
 
@@ -97,13 +99,14 @@ const Section = styled.div`
 			outline: none;
 		}
 
-		background: #752d20; 
+		background: ${colors.accent}; 
+		border: 2px solid ${colors.accent};
 		color: white;
-		border: 2px solid #752d20;
 
 		@media (hover: hover) {
 			:hover {
-				filter: brightness(85%);
+				background: ${colors.accent}; 
+				border: 2px solid ${colors.accent}; 
 				cursor: pointer;
 			}
 		}
@@ -122,9 +125,11 @@ const Section = styled.div`
 		color: white;
 		border: 0;
 
-		:hover {
-			background: #752d20;
-			cursor: pointer;
+		@media (hover: hover) {
+			:hover {
+				color: ${colors.accentHover};
+				cursor: pointer;
+			}
 		}
 
 		:focus {
