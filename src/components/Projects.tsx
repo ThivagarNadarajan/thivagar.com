@@ -11,7 +11,6 @@ import sleepSimple from '../assets/Sleep Simple.png';
 import loanTracker from '../assets/Loan Tracker.png';
 
 //TODO-DONE: change sleep simple link when the github repo changes
-//TODO: bring down the phone imgs a little for loan tracker
 const Projects = (): JSX.Element => {
 	return (
 		<Section>
