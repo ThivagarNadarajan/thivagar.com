@@ -7,7 +7,6 @@ import { InlineIcon } from '@iconify/react';
 import arrowDownAlt2 from '@iconify-icons/dashicons/arrow-down-alt2';
 import arrowUpAlt2 from '@iconify-icons/dashicons/arrow-up-alt2';
 
-//TODO: change font weights and maybe the font colors of certain headers
 const Collapsible: React.FC<{
 	role: string,
 	company: string,
@@ -75,12 +74,10 @@ const Container = styled.div`
 	}
 
 	h2 {
-		// color: ${colors.accent};
 		font-size: 1.2rem;
 	}
 
 	h3 {
-		// color: ${colors.accent};
 		font-size: 1rem;
 	}
 	 
