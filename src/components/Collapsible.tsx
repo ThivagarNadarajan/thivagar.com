@@ -5,6 +5,7 @@ import { InlineIcon } from '@iconify/react';
 import arrowDownAlt2 from '@iconify-icons/dashicons/arrow-down-alt2';
 
 //TODO: change font weights and maybe the font colors of certain headers
+//TODO: fix arrow display on smaller screens
 const Collapsible: React.FC<{
 	role: string,
 	company: string,

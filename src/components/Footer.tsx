@@ -7,6 +7,7 @@ import githubFilled from '@iconify/icons-ant-design/github-filled';
 import bxlLinkedin from '@iconify-icons/bx/bxl-linkedin';
 import bxEnvelope from '@iconify-icons/bx/bx-envelope';
 
+//TODO: look into hover effect on icons for mobile
 const Footer = (): JSX.Element => {
 	return (
 		<>
