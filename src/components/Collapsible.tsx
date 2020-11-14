@@ -75,16 +75,19 @@ const Container = styled.div`
 	}
 
 	h2 {
-		font-size: 22px;
+		// color: ${colors.accent};
+		font-size: 1.2rem;
 	}
 
 	h3 {
-		font-size: 17px;
+		// color: ${colors.accent};
+		font-size: 1rem;
 	}
 	 
 	h4 {
+		color: ${colors.accent};
 		font-weight: 100;
-		font-size: 15px;
+		font-size: 0.9rem;
 	}
 
 	.body {
