@@ -80,7 +80,6 @@ const Container = styled.div`
 	}
 	 
 	h4 {
-		color: ${colors.accent};
 		font-weight: 100;
 		font-size: 0.9rem;
 	}
