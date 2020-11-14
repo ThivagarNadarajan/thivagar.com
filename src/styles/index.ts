@@ -4,8 +4,8 @@ export const colors = {
 	font: 'white',
 	bg: '#2f3040',
 	fg: '#3f4157',
-	accent: '#bd604f',
-	accentHover: '#bd604f'
+	accent: '#ab4f4f',
+	accentHover: '#ab3737'
 };
 
 const GlobalStyle = createGlobalStyle`

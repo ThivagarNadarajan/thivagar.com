@@ -103,8 +103,8 @@ const Section = styled.div`
 
 		@media (hover: hover) {
 			:hover {
-				background: ${colors.accent}; 
-				border: 2px solid ${colors.accent}; 
+				background: ${colors.accentHover}; 
+				border: 2px solid ${colors.accentHover}; 
 				cursor: pointer;
 			}
 		}
@@ -125,7 +125,7 @@ const Section = styled.div`
 
 		@media (hover: hover) {
 			:hover {
-				color: ${colors.accentHover};
+				color: ${colors.accent};
 				cursor: pointer;
 			}
 		}
