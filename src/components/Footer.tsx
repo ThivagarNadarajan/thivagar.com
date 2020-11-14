@@ -9,7 +9,6 @@ import githubFilled from '@iconify/icons-ant-design/github-filled';
 import bxlLinkedin from '@iconify-icons/bx/bxl-linkedin';
 import bxEnvelope from '@iconify-icons/bx/bx-envelope';
 
-//TODO: look into hover effect on icons for mobile
 const Footer = (): JSX.Element => {
 	return (
 		<>
@@ -85,11 +84,9 @@ const Section = styled.div`
 
 		transition: background 100ms;
 
-		@media (hover: hover) {
-			:hover {
-				color: ${colors.font};
-				cursor: pointer;
-			}
+		:hover {
+			color: ${colors.font};
+			cursor: pointer;
 		}
 
 		:focus {

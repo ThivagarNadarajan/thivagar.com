@@ -65,11 +65,9 @@ const Container = styled.div`
 
 		transition: background 100ms;
 
-		@media (hover: hover) {
-			:hover {	
-				background: ${colors.fgLight};
-				cursor: pointer;
-			}
+		:hover {	
+			background: ${colors.fgLight};
+			cursor: pointer;
 		}
 	}
 
@@ -105,10 +103,8 @@ const Container = styled.div`
 		border: none;
 		font-size: 30px;
 
-		@media (hover: hover) {
-			:hover {	
-				cursor: pointer;
-			}
+		:hover {	
+			cursor: pointer;
 		}
 
 		:focus {

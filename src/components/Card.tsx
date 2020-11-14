@@ -37,10 +37,8 @@ const Container = styled.a`
 	display: flex;
 	flex-direction: column;
 
-	@media (hover: hover) {
-		:hover {
-			background: ${colors.fgLight};
-		}
+	:hover {
+		background: ${colors.fgLight};
 	}
 
 	img {

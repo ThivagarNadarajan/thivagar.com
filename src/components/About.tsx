@@ -100,13 +100,12 @@ const Section = styled.div`
 		border: 2px solid ${colors.accent};
 		color: ${colors.font};
 
-		@media (hover: hover) {
-			:hover {
-				background: ${colors.accentHover}; 
-				border: 2px solid ${colors.accentHover}; 
-				cursor: pointer;
-			}
+		:hover {
+			background: ${colors.accentHover}; 
+			border: 2px solid ${colors.accentHover}; 
+			cursor: pointer;
 		}
+		
 	}
 
 	a {
@@ -122,11 +121,9 @@ const Section = styled.div`
 		color: ${colors.font};
 		border: 0;
 
-		@media (hover: hover) {
-			:hover {
-				color: ${colors.accent};
-				cursor: pointer;
-			}
+		:hover {
+			color: ${colors.accent};
+			cursor: pointer;
 		}
 
 		:focus {
