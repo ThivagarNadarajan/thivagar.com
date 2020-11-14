@@ -5,9 +5,9 @@ import { colors } from '../styles';
 
 import { InlineIcon } from '@iconify/react';
 import arrowDownAlt2 from '@iconify-icons/dashicons/arrow-down-alt2';
+import arrowUpAlt2 from '@iconify-icons/dashicons/arrow-up-alt2';
 
 //TODO: change font weights and maybe the font colors of certain headers
-//TODO: change body color or something
 const Collapsible: React.FC<{
 	role: string,
 	company: string,
@@ -26,7 +26,10 @@ const Collapsible: React.FC<{
 						<h3>{role}</h3>
 						<h4>{duration}</h4>
 					</div>
-					<button><InlineIcon icon={arrowDownAlt2} /></button>
+					{collapse
+						? <button><InlineIcon icon={arrowDownAlt2} /></button>
+						: <button><InlineIcon icon={arrowUpAlt2} /></button>
+					}
 				</div>
 				{collapse
 					? <></>
@@ -48,7 +51,7 @@ const Container = styled.div`
 	overflow: hidden;
 	
 	.head {
-		background: ${colors.bg};
+		background: ${colors.fg};
 		padding: 10px;
 		display: grid;
 		grid-template-columns: 10fr 1fr;
@@ -65,7 +68,7 @@ const Container = styled.div`
 
 		@media (hover: hover) {
 			:hover {	
-				background: ${colors.fg};
+				background: ${colors.fgLight};
 				cursor: pointer;
 			}
 		}
@@ -86,25 +89,27 @@ const Container = styled.div`
 
 	.body {
 		margin: 0;
-		padding: 10px;
-		background: ${colors.fg};
+		padding: 13px 0 13px 0;
+		background: ${colors.fgLight};
+		border-top: 2px solid ${colors.bg};
 	}
 
 	ul {
 		margin: 0;
+		padding-left: 30px;
 	}
 
 	button {
 		color: ${colors.font};
 		background: none;
 		border: none;
-		border-radius: 3px;
 		font-size: 30px;
 
-		margin: auto;
-		width: 100%;
-		height: 100%;
-		padding-top: 5%;
+		@media (hover: hover) {
+			:hover {	
+				cursor: pointer;
+			}
+		}
 
 		:focus {
 			outline: none;

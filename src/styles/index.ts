@@ -2,15 +2,16 @@ import { createGlobalStyle } from 'styled-components';
 
 export const colors = {
 	font: 'white',
-	bg: '#2f3040',
-	fg: '#3f4157',
+	bg: '#1d1d26',
+	fg: '#2f3040',
+	fgLight: '#3f4157',
 	accent: '#ab4f4f',
 	accentHover: '#ab3737'
 };
 
 const GlobalStyle = createGlobalStyle`
 	body {
-		background: #1d1d26;
+		background: ${colors.bg};
 		color: ${colors.font};
 		font-family: Roboto;
 		margin: 60px auto 0 auto;

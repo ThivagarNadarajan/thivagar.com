@@ -48,8 +48,8 @@ const Footer = (): JSX.Element => {
 };
 
 const Ruler = styled.hr`
-	background: ${colors.bg};
-	border: ${colors.bg};
+	background: ${colors.fg};
+	border: ${colors.fg};
 	height: 3px;
 	margin: 0;
 `;
@@ -80,7 +80,7 @@ const Section = styled.div`
 		background: none;
 		border: none;
 
-		color: ${colors.bg};
+		color: ${colors.fg};
 		font-size: 20px;
 
 		transition: background 100ms;

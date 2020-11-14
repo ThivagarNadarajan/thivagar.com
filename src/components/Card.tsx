@@ -28,7 +28,7 @@ const Card: React.FC<{
 const Container = styled.a`
 	text-decoration: none;
 	color: ${colors.font};
-	background: ${colors.bg};
+	background: ${colors.fg};
 	overflow: hidden;
 	width: 100%;
 	border-radius: 2px;
@@ -39,7 +39,7 @@ const Container = styled.a`
 
 	@media (hover: hover) {
 		:hover {
-			background: ${colors.fg};
+			background: ${colors.fgLight};
 		}
 	}
 
