@@ -25,7 +25,7 @@ const Projects = (): JSX.Element => {
 					} />
 				<Card
 					imgSrc={nodeRoyale} title={'Node Royale'}
-					link={'node-royale.herokuapp.com'}
+					link={'https://node-royale.herokuapp.com'}
 					info={'2D multiplayer battle royale shooter; last one standing wins '}
 					tags={['ReactJS', 'Node.js', 'Express', 'WebSockets', 'SQLite3']}
 				/>
