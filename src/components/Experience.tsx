@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import Collapsible from './Collapsible';
 
-//TODO-DONE: add proper exp descriptions
 const Experience = (): JSX.Element => {
 	return (
 		<Section>
@@ -16,10 +15,10 @@ const Experience = (): JSX.Element => {
 						[
 							'Followed client specifications to design mockups in Balsamiq, '
 							+ 'for up-coming web applications',
-							'Implemented highly requested query feature to help search '
+							'Implemented an internal query feature to help search '
 							+ 'through millions of data payloads',
 							'Conduct data validation & regression testing every release to '
-							+ 'ensure components don’t break from any changes'
+							+ 'identify any issues within components'
 						]}
 					duration={'07/2020 - 08/2021'}
 				/>
