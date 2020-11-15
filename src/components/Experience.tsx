@@ -12,13 +12,29 @@ const Experience = (): JSX.Element => {
 				<Collapsible
 					role={'Software Developer Intern'}
 					company={'Environment & Climate Change Canada'}
-					description={['lalala', 'tesadva', 'lorem ipsum lol']}
+					description={
+						[
+							'Followed client specifications to design mockups in Balsamiq, '
+							+ 'for up-coming web applications',
+							'Implemented highly requested query feature to help search '
+							+ 'through millions of data payloads',
+							'Conduct data validation & regression testing every release to '
+							+ 'ensure components don’t break from any changes'
+						]}
 					duration={'07/2020 - 08/2021'}
 				/>
 				<Collapsible
 					role={'QA Software Developer'}
 					company={'Canadian Institutes of Health Research'}
-					description={['lalala', 'tesadva', 'lorem ipsum lol']}
+					description={
+						[
+							'Developed and maintained plugins for Customer Relationship '
+							+ 'Management tool (CRM) using JavaScript and C',
+							'Conducted quality assurance testing on CRM prototype prior'
+							+ 'to scheduled completion',
+							'Tested and evaluated the organization\'s websites to ensure '
+							+ 'they met accessibility requirements for those with disabilities'
+						]}
 					duration={'01/2017 - 04/2017'}
 				/>
 			</Collapsibles>
