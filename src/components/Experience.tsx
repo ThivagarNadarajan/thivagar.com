@@ -13,8 +13,8 @@ const Experience = (): JSX.Element => {
 					company={'Environment & Climate Change Canada'}
 					description={
 						[
-							'Followed client specifications to design mockups in Balsamiq, '
-							+ 'for up-coming web applications',
+							'Designed mockups in Balsamiq for up-coming web applications by '
+							+ 'following client specifications',
 							'Implemented an internal query feature to help search '
 							+ 'through millions of data payloads',
 							'Conduct data validation & regression testing every release to '
