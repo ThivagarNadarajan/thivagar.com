@@ -88,7 +88,7 @@ const Container = styled.div`
 
 	.body {
 		margin: 0;
-		padding: 13px 0 13px 0;
+		padding: 13px 10px 13px 5px;
 		background: ${colors.fgLight};
 		border-top: 2px solid ${colors.bg};
 	}
@@ -96,6 +96,10 @@ const Container = styled.div`
 	ul {
 		margin: 0;
 		padding-left: 30px;
+	}
+
+	li {
+		margin-bottom: 5px;
 	}
 
 	button {
