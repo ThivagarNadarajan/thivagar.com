@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { colors } from '../styles';
+import resume from '../Resume.pdf';
 
 import { InlineIcon } from '@iconify/react';
 import fiverrIcon from '@iconify/icons-jam/fiverr';
@@ -9,7 +10,6 @@ import githubFilled from '@iconify/icons-ant-design/github-filled';
 import bxlLinkedin from '@iconify-icons/bx/bxl-linkedin';
 import bxEnvelope from '@iconify-icons/bx/bx-envelope';
 
-//TODO-DONE: link resume
 const About = (): JSX.Element => {
 	return (
 		<Section>
@@ -21,7 +21,9 @@ const About = (): JSX.Element => {
 				of Toronto studying Computer Science. Currently interning at
 				Environment &amp; Climate Change Canada.
 			</p>
-			<button>View Resume</button>
+			<button onClick={() => window.open(resume, '_blank')}>
+				View Resume
+			</button>
 			<hr />
 			<div>
 				<a
