@@ -31,7 +31,7 @@ const Projects = (): JSX.Element => {
 				/>
 				<Card
 					imgSrc={portfolio} title={'Portfolio'}
-					link={'#'}
+					link={'https://github.com/ThivagarNadarajan/thivagar.com'}
 					info={
 						'Personal portfolio website to show my projects & experience '
 						+ '(this website).'
