@@ -23,7 +23,7 @@ const Footer = (): JSX.Element => {
 						<InlineIcon icon={fiverrIcon} />
 					</a>
 					<a
-						href='https://www.linkedin.com/in/thivagar-nadarajan-40802118a'
+						href='https://www.linkedin.com/in/thivagar-nadarajan'
 						target='_blank'
 						rel="noreferrer"
 					>
