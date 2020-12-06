@@ -14,11 +14,12 @@ const About = (): JSX.Element => {
 		<Section>
 			<h1>Thivagar</h1>
 			<h1>Nadarajan</h1>
-			<h2>Computer Science Student</h2>
+			<h2>Computer Science Student &amp; Software Developer</h2>
 			<p>
-				Hi there! I&apos;m a freelance web developer and a senior at the University
+				Hi there! I&apos;m a senior at the University
 				of Toronto studying Computer Science. Currently interning at
-				Environment &amp; Climate Change Canada.
+				Environment &amp; Climate Change Canada and working part-time
+				at IT Collaborative Inc.
 			</p>
 			<button onClick={() => window.open(resume, '_blank')}>
 				View Resume
