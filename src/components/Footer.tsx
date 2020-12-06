@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import { colors } from '../styles';
 
 import { InlineIcon } from '@iconify/react';
-import fiverrIcon from '@iconify/icons-jam/fiverr';
 import githubFilled from '@iconify/icons-ant-design/github-filled';
 import bxlLinkedin from '@iconify-icons/bx/bxl-linkedin';
 import bxEnvelope from '@iconify-icons/bx/bx-envelope';
@@ -15,13 +14,6 @@ const Footer = (): JSX.Element => {
 			<Ruler />
 			<Section>
 				<div>
-					<a
-						href='https://www.fiverr.com/thiv_nadarajan'
-						target='_blank'
-						rel="noreferrer"
-					>
-						<InlineIcon icon={fiverrIcon} />
-					</a>
 					<a
 						href='https://www.linkedin.com/in/thivagar-nadarajan'
 						target='_blank'

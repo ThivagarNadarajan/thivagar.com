@@ -5,7 +5,6 @@ import { colors } from '../styles';
 import resume from '../Resume.pdf';
 
 import { InlineIcon } from '@iconify/react';
-import fiverrIcon from '@iconify/icons-jam/fiverr';
 import githubFilled from '@iconify/icons-ant-design/github-filled';
 import bxlLinkedin from '@iconify-icons/bx/bxl-linkedin';
 import bxEnvelope from '@iconify-icons/bx/bx-envelope';
@@ -15,7 +14,7 @@ const About = (): JSX.Element => {
 		<Section>
 			<h1>Thivagar</h1>
 			<h1>Nadarajan</h1>
-			<h2>Computer Science Student &amp; Freelance Web Developer</h2>
+			<h2>Computer Science Student</h2>
 			<p>
 				Hi there! I&apos;m a freelance web developer and a senior at the University
 				of Toronto studying Computer Science. Currently interning at
@@ -26,13 +25,6 @@ const About = (): JSX.Element => {
 			</button>
 			<hr />
 			<div>
-				<a
-					href='https://www.fiverr.com/thiv_nadarajan'
-					target='_blank'
-					rel="noreferrer"
-				>
-					<InlineIcon icon={fiverrIcon} />
-				</a>
 				<a
 					href='https://www.linkedin.com/in/thivagar-nadarajan'
 					target='_blank'
