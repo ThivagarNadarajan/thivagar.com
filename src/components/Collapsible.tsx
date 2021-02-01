@@ -3,57 +3,85 @@ import styled from 'styled-components';
 
 import { colors } from '../styles';
 
-import { InlineIcon } from '@iconify/react';
-import arrowDownAlt2 from '@iconify-icons/dashicons/arrow-down-alt2';
-import arrowUpAlt2 from '@iconify-icons/dashicons/arrow-up-alt2';
-
 const Collapsible: React.FC<{
 	role: string,
 	company: string,
 	description: string[],
-	duration: string
+	duration: string,
+	isFirst?: boolean,
+	isLast?: boolean
 }>
-	= ({ role, company, description, duration }): JSX.Element => {
+	= ({
+		role,
+		company,
+		description,
+		duration,
+		isFirst = false,
+		isLast = false }
+	): JSX.Element => {
 		const [collapse, setCollapse] = useState(true);
 		const toggleCollapse = () => setCollapse(!collapse);
 
 		return (
-			<Container>
-				<div className="head" onClick={toggleCollapse}>
-					<div>
-						<h2>{company}</h2>
-						<h3>{role}</h3>
-						<h4>{duration}</h4>
+			<div>
+				<Dot></Dot>
+				<Container isFirst={isFirst} isLast={isLast}>
+					<div className="verticalLine"></div>
+					<div className="head" onClick={toggleCollapse}>
+						<div>
+							<h2>{company}</h2>
+							<h3>{role}</h3>
+							<h4>{duration}</h4>
+						</div>
 					</div>
 					{collapse
-						? <button><InlineIcon icon={arrowDownAlt2} /></button>
-						: <button><InlineIcon icon={arrowUpAlt2} /></button>
+						? <></>
+						: (
+							<div className="body">
+								<ul>
+									{description.map(d => <li key={d}>{d}</li>)}
+								</ul>
+							</div>
+						)
 					}
-				</div>
-				{collapse
-					? <></>
-					: (
-						<div className="body">
-							<ul>
-								{description.map(d => <li key={d}>{d}</li>)}
-							</ul>
-						</div>
-					)
-				}
-			</Container>
+				</Container>
+				{isLast ? <></> : <Spacer></Spacer>}
+			</div>
 		);
 	};
 
-const Container = styled.div`
+const Spacer = styled.div`
+	width: 10px;
+	height: 20px;
+	border-left: 4px solid  ${colors.accent};
+`;
+
+const Dot = styled.span`
+	height: 15px;
+	width: 15px;
+	background-color: ${colors.accent};
+	position: absolute;
+	border-radius: 50%;
+	transform: translateX(-5.5px) translateY(33.5px);
+
+`;
+
+const Container = styled.div<{ isFirst: boolean, isLast: boolean }>`
 	width: 100% - 10px;
-	border-radius: 2px;
 	overflow: hidden;
-	
+	position: relative;
+
+	.verticalLine {
+		border-left: 4px solid ${colors.accent};
+		position: absolute;
+		top: ${props => props.isFirst ? '41px' : '0'};
+		bottom: 0;
+		height: ${props => props.isLast ? '41px' : ''};
+	}
+
 	.head {
-		background: ${colors.fg};
+		margin-left: 10px;
 		padding: 10px;
-		display: grid;
-		grid-template-columns: 10fr 1fr;
 
 		@media only screen and (max-width: 600px) {
 			grid-template-columns: 1fr;
@@ -63,34 +91,32 @@ const Container = styled.div`
 			}
 		}
 
-		transition: background 100ms;
+		transition: color 100ms;
 
 		@media (hover: hover) {
 			:hover {
-				background: ${colors.fgLight};
+				color: ${colors.accentHover};
 				cursor: pointer;
 			}
 		}
 	}
 
 	h2 {
-		font-size: 1.2rem;
+		font-size: 1.5rem;
 	}
 
 	h3 {
-		font-size: 1rem;
+		font-size: 1.2rem;
 	}
 	 
 	h4 {
 		font-weight: 100;
-		font-size: 0.9rem;
+		font-size: 1rem;
 	}
 
 	.body {
 		margin: 0;
 		padding: 13px 10px 13px 5px;
-		background: ${colors.fgLight};
-		border-top: 2px solid ${colors.bg};
 	}
 
 	ul {

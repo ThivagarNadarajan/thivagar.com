@@ -21,6 +21,7 @@ const Experience = (): JSX.Element => {
 							+ 'identify any issues within components'
 						]}
 					duration={'07/2020 - 08/2021'}
+					isFirst={true}
 				/>
 				<Collapsible
 					role={'QA Software Developer'}
@@ -35,6 +36,7 @@ const Experience = (): JSX.Element => {
 							+ 'they met accessibility requirements for those with disabilities'
 						]}
 					duration={'01/2017 - 04/2017'}
+					isLast={true}
 				/>
 			</Collapsibles>
 		</Section>
@@ -47,9 +49,6 @@ const Section = styled.div`
 
 const Collapsibles = styled.div`
 	margin-top: 25px;
-	display: grid;
-	grid-template-columns: 1fr;
-	row-gap: 20px;
 `;
 
 export default Experience;
