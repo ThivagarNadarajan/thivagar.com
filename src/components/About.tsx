@@ -18,8 +18,7 @@ const About = (): JSX.Element => {
 			<p>
 				Hi there! I&apos;m a senior at the University
 				of Toronto studying Computer Science. Currently interning at
-				Environment &amp; Climate Change Canada and working part-time
-				at IT Collaborative Inc.
+				Environment &amp; Climate Change Canada.
 			</p>
 			<button onClick={() => window.open(resume, '_blank')}>
 				View Resume
