@@ -29,7 +29,7 @@ const Experience = (): JSX.Element => {
 					description={
 						[
 							'Coming'
-							+ 'soon',
+							+ ' soon',
 						]}
 					duration={'12/2020 - 02/2021'}
 				/>
