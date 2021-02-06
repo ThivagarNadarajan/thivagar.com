@@ -103,15 +103,17 @@ const Container = styled.div<{ isFirst: boolean, isLast: boolean }>`
 
 	h2 {
 		font-size: 1.5rem;
+		font-weight: 400;
 	}
 
 	h3 {
 		font-size: 1.2rem;
+		font-weight: 300;
 	}
 	 
 	h4 {
-		font-weight: 100;
 		font-size: 1rem;
+		font-weight: 300;
 	}
 
 	.body {

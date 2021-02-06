@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
 	body {
 		background: ${colors.bg};
 		color: ${colors.font};
-		font-family: Roboto;
+		font-family: Open Sans;
 		margin: 60px auto 0 auto;
 		width: 60%;
 
@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
 	
 	h1, h2, h3, h4 {
 		margin: 0;
-		font-family: Nunito Sans;
+		font-family: Roboto Slab;
 		line-height: 1.2em;
 	}
 

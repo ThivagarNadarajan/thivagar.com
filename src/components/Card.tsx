@@ -37,6 +37,11 @@ const Container = styled.a`
 	display: flex;
 	flex-direction: column;
 
+	h2 {
+		font-weight: 400;
+		font-size: 30px;
+	}
+
 	:hover {
 		background: ${colors.fgLight};
 	}
