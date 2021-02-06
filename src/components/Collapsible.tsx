@@ -45,16 +45,9 @@ const Collapsible: React.FC<{
 						)
 					}
 				</Container>
-				{isLast ? <></> : <Spacer></Spacer>}
 			</div>
 		);
 	};
-
-const Spacer = styled.div`
-	width: 10px;
-	height: 20px;
-	border-left: 4px solid  ${colors.accent};
-`;
 
 const Dot = styled.span`
 	height: 15px;
@@ -102,17 +95,17 @@ const Container = styled.div<{ isFirst: boolean, isLast: boolean }>`
 	}
 
 	h2 {
-		font-size: 1.5rem;
+		font-size: 28px;
 		font-weight: 400;
 	}
 
 	h3 {
-		font-size: 1.2rem;
+		font-size: 25px;
 		font-weight: 300;
 	}
 	 
 	h4 {
-		font-size: 1rem;
+		font-size: 20px;
 		font-weight: 300;
 	}
 
@@ -123,7 +116,7 @@ const Container = styled.div<{ isFirst: boolean, isLast: boolean }>`
 
 	ul {
 		margin: 0;
-		padding-left: 30px;
+		font-size: 18px;
 	}
 
 	li {

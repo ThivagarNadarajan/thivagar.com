@@ -39,7 +39,7 @@ const Container = styled.a`
 
 	h2 {
 		font-weight: 400;
-		font-size: 30px;
+		font-size: 28px;
 	}
 
 	:hover {
@@ -55,6 +55,7 @@ const Container = styled.a`
 		flex-direction: column;
 		justify-content: space-between;
 		padding: 4.5% 4.5% 0 4.5%;
+		font-size: 18px;
 	}
 
 	span {
@@ -65,7 +66,7 @@ const Container = styled.a`
 
 		padding: 6px;
 		border-radius: 3px;
-		font-size: small;
+		font-size: medium;
 		width: max-content;
 
 		margin-bottom: 4.5%;

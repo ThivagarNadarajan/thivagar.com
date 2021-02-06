@@ -59,6 +59,7 @@ const Section = styled.div`
 	h2 {
 		color: ${colors.accent};
 		font-weight: 300;
+		margin-top: 5px;
 	}
 
 	hr {
@@ -77,12 +78,11 @@ const Section = styled.div`
 
 	button {
 		margin: 20px 0 10px 0;
-	
 		padding: 8px;
 	
 		border-radius: 5px;
 		width: max-content;
-		font-size: 1.2rem;
+		font-size: 23px;
 	
 		transition: background 100ms;
 		
