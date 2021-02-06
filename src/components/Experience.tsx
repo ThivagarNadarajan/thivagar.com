@@ -24,6 +24,16 @@ const Experience = (): JSX.Element => {
 					isFirst={true}
 				/>
 				<Collapsible
+					role={'Contract Software Developer'}
+					company={'IT Collaborative Inc.'}
+					description={
+						[
+							'Coming'
+							+ 'soon',
+						]}
+					duration={'12/2020 - 02/2021'}
+				/>
+				<Collapsible
 					role={'QA Software Developer'}
 					company={'Canadian Institutes of Health Research'}
 					description={
