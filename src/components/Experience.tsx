@@ -28,11 +28,11 @@ const Experience = (): JSX.Element => {
 					company={'IT Collaborative Inc.'}
 					description={
 						[
-							'Used SwiftUI to implement authentication, profile & '
+							'Used SwiftUI to build authentication, profile & '
 							+ 'settings screens for company iOS application',
-							'Deployed multiple builds on TestFlight for internal testing',
-							'Built backend on the Firebase platform, incorporating '
-							+ 'Node.js Cloud Functions, Firestore & Security Rules, '
+							'Deployed multiple builds to TestFlight for internal testing',
+							'Built backend with Firebase suite, incorporating '
+							+ 'Node.js Cloud Functions, Firestore, Security Rules, '
 							+ 'among other Firebase tools',
 						]}
 					duration={'12/2020 - 02/2021'}
