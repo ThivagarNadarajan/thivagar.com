@@ -86,11 +86,9 @@ const Container = styled.div<{ isFirst: boolean, isLast: boolean }>`
 
 		transition: color 100ms;
 
-		@media (hover: hover) {
-			:hover {
-				color: ${colors.accentHover};
-				cursor: pointer;
-			}
+		:hover {
+			color: ${colors.accentHover};
+			cursor: pointer;
 		}
 	}
 
