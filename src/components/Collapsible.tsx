@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import AnimateHeight from 'react-animate-height';
 
 import { colors } from '../styles';
 
@@ -34,16 +35,18 @@ const Collapsible: React.FC<{
 							<h4>{duration}</h4>
 						</div>
 					</div>
-					{collapse
-						? <></>
-						: (
-							<div className="body">
-								<ul>
-									{description.map(d => <li key={d}>{d}</li>)}
-								</ul>
-							</div>
-						)
-					}
+					<AnimateHeight
+						className="body"
+						duration={250}
+						height={collapse ? '0' : 'auto'}
+						aria-hidden={true}
+					>
+						<div>
+							<ul>
+								{description.map(d => <li key={d}>{d}</li>)}
+							</ul>
+						</div>
+					</AnimateHeight>
 				</Container>
 			</div>
 		);
@@ -92,6 +95,11 @@ const Container = styled.div<{ isFirst: boolean, isLast: boolean }>`
 		}
 	}
 
+	.body {
+		margin: 0;
+		padding: 10px 5px;
+	}
+
 	h2 {
 		font-size: 28px;
 		font-weight: 400;
@@ -105,11 +113,6 @@ const Container = styled.div<{ isFirst: boolean, isLast: boolean }>`
 	h4 {
 		font-size: 20px;
 		font-weight: 300;
-	}
-
-	.body {
-		margin: 0;
-		padding: 13px 10px 13px 5px;
 	}
 
 	ul {
