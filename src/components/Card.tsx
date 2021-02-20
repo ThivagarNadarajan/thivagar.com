@@ -44,6 +44,7 @@ const Container = styled.a`
 
 	:hover {
 		background: ${colors.fgLight};
+		transition: background 200ms;
 	}
 
 	img {
