@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseEndpoint = 'https://misc-tasks.herokuapp.com/';
+const baseEndpoint = 'https://misc-tasks.herokuapp.com';
 
 export interface JobInfo {
 	role: string,
