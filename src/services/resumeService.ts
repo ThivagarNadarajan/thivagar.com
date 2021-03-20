@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// const endpoint = 'https://script-server.herokuapp.com';
-const baseEndpoint = 'http://localhost:5000';
+const baseEndpoint = 'https://script-server.herokuapp.com';
+// const baseEndpoint = 'http://localhost:5000';
 
 export interface JobInfo {
 	role: string,
