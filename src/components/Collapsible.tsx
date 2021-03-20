@@ -38,7 +38,7 @@ const Collapsible: React.FC<{
 					<AnimateHeight
 						className="body"
 						duration={250}
-						height={collapse ? '0' : 'auto'}
+						height={collapse ? 0 : 'auto'}
 						aria-hidden={true}
 					>
 						<div>

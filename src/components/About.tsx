@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { colors } from '../styles';
-import resume from '../Resume.pdf';
+import { getResume } from '../services/resumeService';
 
 import { InlineIcon } from '@iconify/react';
 import githubFilled from '@iconify/icons-ant-design/github-filled';
@@ -10,6 +10,7 @@ import bxlLinkedin from '@iconify-icons/bx/bxl-linkedin';
 import bxEnvelope from '@iconify-icons/bx/bx-envelope';
 
 const About = (): JSX.Element => {
+
 	return (
 		<Section>
 			<h1>Thivagar</h1>
@@ -20,7 +21,13 @@ const About = (): JSX.Element => {
 				of Toronto studying Computer Science. Currently interning at
 				Environment &amp; Climate Change Canada.
 			</p>
-			<button onClick={() => window.open(resume, '_blank')}>
+			<button onClick={async () => {
+				const resume = await getResume();
+				const url = window.URL.createObjectURL(
+					new Blob([resume], { type: 'application/pdf' })
+				);
+				window.open(url, '_blank');
+			}}>
 				View Resume
 			</button>
 			<hr />
