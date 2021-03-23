@@ -3,12 +3,12 @@ import styled from 'styled-components';
 
 import Card from './Card';
 
-import nodeRoyale from '../assets/Node Royale.png';
-import anjaleeFineArts from '../assets/Anjalee Fine Arts.png';
-import teaforgeGames from '../assets/Teaforge Games.png';
-import portfolio from '../assets/Portfolio.png';
-import sleepSimple from '../assets/Sleep Simple.png';
-import loanTracker from '../assets/Loan Tracker.png';
+import nodeRoyale from '../assets/img/Node Royale.png';
+import anjaleeFineArts from '../assets/img/Anjalee Fine Arts.png';
+import teaforgeGames from '../assets/img/Teaforge Games.png';
+import portfolio from '../assets/img/Portfolio.png';
+import sleepSimple from '../assets/img/Sleep Simple.png';
+import loanTracker from '../assets/img/Loan Tracker.png';
 
 const Projects = (): JSX.Element => {
 	return (

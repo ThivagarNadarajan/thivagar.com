@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { colors } from '../styles';
-import { getResume } from '../services/resumeService';
+import resume from '../assets/Resume.pdf';
 
 import { InlineIcon } from '@iconify/react';
 import githubFilled from '@iconify/icons-ant-design/github-filled';
@@ -21,13 +21,7 @@ const About = (): JSX.Element => {
 				of Toronto studying Computer Science. Currently interning at
 				Environment &amp; Climate Change Canada.
 			</p>
-			<button onClick={async () => {
-				const resume = await getResume();
-				const url = window.URL.createObjectURL(
-					new Blob([resume], { type: 'application/pdf' })
-				);
-				window.open(url, '_blank');
-			}}>
+			<button onClick={async () => window.open(resume, '_blank')}>
 				View Resume
 			</button>
 			<hr />
