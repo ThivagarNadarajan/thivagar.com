@@ -44,7 +44,7 @@ const projects = [
 	{
 		title: 'Sleep Simple',
 		imgSrc: sleepSimple,
-		link: 'https://github.com/ThivagarNadarajan/Loan-Tracker',
+		link: 'https://github.com/ThivagarNadarajan/Sleep-Simple',
 		info: 'iOS application to emit basic white noise',
 		tags: ['Swift']
 	}
