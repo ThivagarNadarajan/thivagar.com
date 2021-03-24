@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import AnimateHeight from 'react-animate-height';
 
-import { colors } from '../styles';
+import { colors } from '../../styles';
 
 const Collapsible: React.FC<{
 	role: string,

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { colors } from '../styles/index';
+import { colors } from '../../styles';
 
 const Card: React.FC<{
 	imgSrc: string,
