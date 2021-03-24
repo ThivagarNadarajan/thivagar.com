@@ -6,16 +6,13 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
 
-const App = (): JSX.Element => {
-	return (
-		<>
-			<GlobalStyle />
-			<About />
-			<Projects />
-			<Experience />
-			<Footer />
-		</>
-	);
-};
+const App = (): JSX.Element =>
+	<>
+		<GlobalStyle />
+		<About />
+		<Projects />
+		<Experience />
+		<Footer />
+	</>;
 
 export default App;

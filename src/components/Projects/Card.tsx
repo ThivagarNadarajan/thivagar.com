@@ -10,20 +10,18 @@ const Card: React.FC<{
 	info: string,
 	tags: string[]
 }>
-	= ({ imgSrc, title, info, tags, link }): JSX.Element => {
-		return (
-			<Container href={link} target='_blank'>
-				<img src={imgSrc} />
-				<div className="info">
-					<h2>{title}</h2>
-					<p>{info}</p>
-					<div className="tags">
-						{tags.map(tag => <span key={tag}>{tag}</span>)}
-					</div>
+	= ({ imgSrc, title, info, tags, link }): JSX.Element =>
+		<Container href={link} target='_blank'>
+			<img src={imgSrc} />
+			<div className="info">
+				<h2>{title}</h2>
+				<p>{info}</p>
+				<div className="tags">
+					{tags.map(tag => <span key={tag}>{tag}</span>)}
 				</div>
-			</Container>
-		);
-	};
+			</div>
+		</Container>;
+
 
 const Container = styled.a`
 	text-decoration: none;

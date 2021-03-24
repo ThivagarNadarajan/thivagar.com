@@ -8,35 +8,33 @@ import githubFilled from '@iconify/icons-ant-design/github-filled';
 import bxlLinkedin from '@iconify-icons/bx/bxl-linkedin';
 import bxEnvelope from '@iconify-icons/bx/bx-envelope';
 
-const Footer = (): JSX.Element => {
-	return (
-		<>
-			<Ruler />
-			<Section>
-				<div>
-					<a
-						href='https://www.linkedin.com/in/thivagar-nadarajan'
-						target='_blank'
-						rel="noreferrer"
-					>
-						<InlineIcon icon={bxlLinkedin} />
-					</a>
-					<a
-						href='https://github.com/ThivagarNadarajan'
-						target='_blank'
-						rel="noreferrer"
-					>
-						<InlineIcon icon={githubFilled} />
-					</a>
-					<a href='mailto:thiv.nadarajan@gmail.com'>
-						<InlineIcon icon={bxEnvelope} />
-					</a>
-				</div>
-				<p>© {(new Date()).getFullYear()} Thivagar Nadarajan</p>
-			</Section>
-		</>
-	);
-};
+const Footer = (): JSX.Element =>
+	<>
+		<Ruler />
+		<Section>
+			<div>
+				<a
+					href='https://www.linkedin.com/in/thivagar-nadarajan'
+					target='_blank'
+					rel="noreferrer"
+				>
+					<InlineIcon icon={bxlLinkedin} />
+				</a>
+				<a
+					href='https://github.com/ThivagarNadarajan'
+					target='_blank'
+					rel="noreferrer"
+				>
+					<InlineIcon icon={githubFilled} />
+				</a>
+				<a href='mailto:thiv.nadarajan@gmail.com'>
+					<InlineIcon icon={bxEnvelope} />
+				</a>
+			</div>
+			<p>© {(new Date()).getFullYear()} Thivagar Nadarajan</p>
+		</Section>
+	</>;
+
 
 const Ruler = styled.hr`
 	background: ${colors.fg};
