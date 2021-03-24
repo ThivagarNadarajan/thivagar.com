@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { colors } from '../styles';
-import resume from '../assets/Resume.pdf';
+import resume from '../assets/job-docs/Resume.pdf';
 
 import { InlineIcon } from '@iconify/react';
 import githubFilled from '@iconify/icons-ant-design/github-filled';
