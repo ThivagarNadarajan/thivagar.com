@@ -4,7 +4,7 @@ const jobs = [
 		company: 'Environment & Climate Change Canada',
 		duration: 'July 2020 – Present',
 		description: [
-			'Worked with a team to design and build Canada-wide data viewer application; designed with Balsamiq and built with Angular',
+			'Worked with a team to design and build an application to view weather observation data across Canada; designed with Balsamiq and built with Angular',
 			'Used JavaScript to build an internal query tool to help other developers filter through millions of data payloads',
 			'Conducted data validation & regression testing every release to identify any issues within components, using Kibana & Logstash'
 		]
