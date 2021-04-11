@@ -5,7 +5,7 @@ const jobs = [
 		duration: 'July 2020 – Present',
 		description: [
 			'Worked with a team to design and build an application to view weather observation data across Canada; designed with Balsamiq and built with Angular',
-			'Used JavaScript to build an internal query tool to help other developers filter through millions of data payloads',
+			'Used Java & JavaScript to build an internal query tool to help other developers filter through millions of data payloads',
 			'Conducted data validation & regression testing every release to identify any issues within components, using Kibana & Logstash'
 		]
 	},
@@ -24,7 +24,7 @@ const jobs = [
 		company: 'Canadian Institutes of Health Research',
 		duration: 'Jan 2020 – April 2020',
 		description: [
-			'Developed plugins to streamline the workflow of the Customer Relationship Management tool (CRM) using JavaScript & C',
+			'Developed plugins to streamline the workflow of the Customer Relationship Management tool (CRM), using JavaScript & C',
 			'Completed quality assurance testing on CRM prototype in order to retire legacy CRM software'
 		]
 	}
