@@ -16,7 +16,8 @@ const Projects = (): JSX.Element =>
 						imgSrc={imgSrc}
 						link={link}
 						info={info}
-						tags={tags} />
+						tags={tags}
+					/>
 				)
 			}
 		</Cards>
