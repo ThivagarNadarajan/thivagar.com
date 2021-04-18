@@ -15,10 +15,10 @@ const GlobalStyle = createGlobalStyle`
 		color: ${colors.font};
 		font-family: Open Sans;
 		margin: 60px auto 0 auto;
-		width: 60%;
+		width: 70%;
 
 		@media only screen and (max-width: 1200px) {
-			width: 70%;
+			width: 80%;
 		}
 
 		@media only screen and (max-width: 800px) {
