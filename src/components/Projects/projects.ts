@@ -19,7 +19,7 @@ const projects = [
 		imgSrc: hltbLite,
 		link: 'https://musing-yalow-4d66e9.netlify.app',
 		info: 'Visualization of game completion data from HowLongToBeat',
-		tags: ['ReactJS', 'TypeScript', 'Node.js', 'ReCharts']
+		tags: ['ReactJS', 'TypeScript', 'Node.js', 'Recharts']
 	},
 	{
 		title: 'Node Royale',
