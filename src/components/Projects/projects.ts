@@ -4,6 +4,7 @@ import teaforgeGames from '../../assets/img/Teaforge Games.png';
 import portfolio from '../../assets/img/Portfolio.png';
 import sleepSimple from '../../assets/img/Sleep Simple.png';
 import loanTracker from '../../assets/img/Loan Tracker.png';
+import hltbLite from '../../assets/img/HLTB Lite.png';
 
 const projects = [
 	{
@@ -12,6 +13,13 @@ const projects = [
 		link: 'https://teaforge.com',
 		info: 'Website to play social deduction games (Resistance, Werewolf etc.)',
 		tags: ['ReactJS', 'TypeScript', 'Node.js', 'Express', 'Socket.io']
+	},
+	{
+		title: 'HLTB Lite',
+		imgSrc: hltbLite,
+		link: 'https://musing-yalow-4d66e9.netlify.app',
+		info: 'Visualization of game completion data from HowLongToBeat',
+		tags: ['ReactJS', 'TypeScript', 'Node.js', 'ReCharts']
 	},
 	{
 		title: 'Node Royale',
